@@ -58,7 +58,7 @@ function createWindow() {
         height: 800
     });
 
-    win.setMenu(null);
+    //win.setMenu(null);
 
     // and load the index.html of the app.
     win.loadURL(url.format({

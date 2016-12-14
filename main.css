@@ -10,14 +10,33 @@ body, html {
     float: left;
     width: 300px;
     height: 100%;
-    background-color: #eeeeee;
+    background-color: #eee;
     background-image: url("45-degree-fabric-light.png");
     border-right: 2px solid #777; }
+    .main-wrapper .contact-list .contact-card {
+      height: 100px;
+      width: 100%;
+      border-bottom: 1px solid #777;
+      background-color: #ddd;
+      vertical-align: middle;
+      text-align: center;
+      cursor: pointer; }
+      .main-wrapper .contact-list .contact-card .name {
+        margin: 0;
+        padding-top: 30px; }
+      .main-wrapper .contact-list .contact-card:hover {
+        background-color: #aaa; }
   .main-wrapper .conversation-area {
-    width: auto;
-    height: 100px;
+    overflow: hidden;
     height: 100%;
-    background-color: #eeeeee;
+    background-color: #eee;
     background-image: url("60-lines.png"); }
+    .main-wrapper .conversation-area .them {
+      height: 100%;
+      width: 50%;
+      float: left; }
+    .main-wrapper .conversation-area .me {
+      height: 100%;
+      overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */

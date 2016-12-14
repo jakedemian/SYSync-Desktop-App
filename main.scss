@@ -1,5 +1,11 @@
 @import url("normalize.css");
 
+//variables
+$contactListBackgroundImage: url("45-degree-fabric-light.png");
+$convoAreaBackgroundImage: url("60-lines.png");
+
+$baseBackgroundColor: #eee;
+
 body, html {
 	height: 100%;
 }
@@ -13,16 +19,46 @@ body, html {
 		float: left;
 		width: 300px;
 		height: 100%;
-		background-color: #eeeeee;
-		background-image: url("45-degree-fabric-light.png");
+		background-color: $baseBackgroundColor;
+		background-image: $contactListBackgroundImage;
 		border-right: 2px solid #777;
+
+		.contact-card{
+			height: 100px;
+			width: 100%;
+			border-bottom: 1px solid #777;
+			background-color: #ddd;			
+			vertical-align: middle;
+			text-align: center;
+			cursor: pointer;
+
+
+			.name{
+				margin: 0;
+				padding-top: 30px;
+			}
+
+			&:hover{
+				background-color: #aaa;
+			}
+		}
 	}
 
 	.conversation-area{
-		width: auto;
-		height: 100px;
+		overflow: hidden;
 		height: 100%;
-		background-color: #eeeeee;
-		background-image: url("60-lines.png");
+		background-color: $baseBackgroundColor;
+		background-image: $convoAreaBackgroundImage;
+
+		.them{
+			height: 100%;
+			width:50%;
+			float: left;
+		}
+
+		.me{
+			height: 100%;
+			overflow: hidden;
+		}
 	}
 }
