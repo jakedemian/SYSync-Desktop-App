@@ -50,15 +50,33 @@ body, html {
 		background-color: $baseBackgroundColor;
 		background-image: $convoAreaBackgroundImage;
 
-		.them{
-			height: 100%;
-			width:50%;
-			float: left;
-		}
+		.msg{
+			vertical-align: bottom;
+			border: 1px solid black;
+			margin: 10px;
+			min-width: 50px;
+			text-align: center;
+			padding: 7px;
+			border-radius: 10px;
 
-		.me{
-			height: 100%;
-			overflow: hidden;
+			&-them{
+				background-color: #ddd;
+				float: left;
+				max-width: 45%;
+				display: inline;
+				clear: both;
+				border-bottom-left-radius: 0px;
+			}
+
+			&-me{
+				background-color: #42f456;
+				float: right;
+				max-width: 45%;
+				display: inline;
+				clear: both;
+				border-bottom-right-radius: 0px;
+
+			}
 		}
 	}
 }
